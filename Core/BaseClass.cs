@@ -48,7 +48,13 @@ namespace CornerStoneNUnit.Core
             {
                 Reports.LogFail("Test Failed: " + TestContext.CurrentContext.Result.Message);
             }
-            DriverFactory.QuitDriver();
+            if (driver != null)
+            {
+                driver.Quit();
+                //DriverFactory.QuitDriver();
+                driver.Dispose();
+
+            }
 
         }
 
@@ -56,7 +62,6 @@ namespace CornerStoneNUnit.Core
         public void OneTimeTearDown()
         {
             Reports.Flush();  
-            driver.Dispose();
         }
     }
 }
