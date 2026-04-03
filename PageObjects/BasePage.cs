@@ -21,6 +21,8 @@ namespace CornerStoneNUnit.PageObjects
         }
         protected void Click(By Locator)
         {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("arguments[0].scrollIntoView(true);", Find(Locator));
             wait.Until(ExpectedConditions.ElementToBeClickable(Locator)).Click();
         }
         protected void Type(By Locator, String Text)
