@@ -55,7 +55,8 @@ namespace CornerStoneNUnit.Core
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
-            Reports.Flush();    
+            Reports.Flush();  
+            driver.Dispose();
         }
     }
 }

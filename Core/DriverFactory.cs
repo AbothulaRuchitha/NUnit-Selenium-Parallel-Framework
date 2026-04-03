@@ -23,7 +23,11 @@ namespace CornerStoneNUnit.Core
         }
         public static void QuitDriver()
         {
-            driver.Value.Quit();
+            if (driver.Value != null)
+            {
+                driver.Value.Quit();
+                driver.Value=null;
+            }
         }
     }
 }
