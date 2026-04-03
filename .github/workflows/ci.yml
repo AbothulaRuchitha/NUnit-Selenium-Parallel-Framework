@@ -1,4 +1,4 @@
- ﻿name: Run NUnit Tests
+﻿name: Run NUnit Tests
 
 on:
   push:
