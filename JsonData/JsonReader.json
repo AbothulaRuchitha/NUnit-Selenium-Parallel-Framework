@@ -1,0 +1,41 @@
+﻿{
+  "WebsiteUrl": "https://cornerstone-light-demo.mybigcommerce.com/",
+  "ProductPage": "https://cornerstone-light-demo.mybigcommerce.com/account.php?action=order_status",
+  "SortOptions": "alphaasc",
+  "OrderConfirmed": "order-confirmation",
+  "LoginUser": {
+
+
+    "Email": "kk@gmail.com",
+    "Password": "sailu@123"
+  },
+  "CartUser": {
+    "Email": "samk@gmail.com",
+    "Password": "sam@123"
+  },
+  "InvalidUsers": [
+    {
+      "Email": "",
+      "Password": "sailu@123"
+
+    },
+    {
+
+      "Email": "kk@gmail.com",
+      "Password": ""
+    }
+  ],
+  "PaymentDetails": [
+    {
+      "CardNumber": "",
+      "ExpiryDate": "",
+      "Name": ""
+    },
+    {
+      "CardNumber": "4111 1111 1111 1111",
+      "ExpiryDate": "12/27",
+      "Name": "sailu"
+    }
+  ]
+
+}
