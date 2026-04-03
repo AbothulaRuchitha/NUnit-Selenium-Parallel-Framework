@@ -1,7 +1,6 @@
 ﻿using System;
 using OpenQA.Selenium;
 using NUnit.Framework.Interfaces;
-using OpenQA.Selenium;
 
 namespace CornerStoneNUnit.Utilities
 {

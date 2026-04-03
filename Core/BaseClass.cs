@@ -51,7 +51,6 @@ namespace CornerStoneNUnit.Core
             if (driver != null)
             {
                 driver.Quit();
-                //DriverFactory.QuitDriver();
                 driver.Dispose();
 
             }

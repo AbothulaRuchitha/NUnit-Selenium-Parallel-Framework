@@ -17,10 +17,10 @@ namespace CornerStoneNUnit.Core
             driver.Value = new ChromeDriver(options);
             return driver.Value;
         }
-        public static IWebDriver GetDriver()
-        {
-            return driver.Value;
-        }
+        //public static IWebDriver GetDriver()
+        //{
+        //    return driver.Value;
+        //}
         
     }
 }
