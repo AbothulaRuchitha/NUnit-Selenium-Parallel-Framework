@@ -3,7 +3,7 @@ name: Run NUnit Tests
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   test:
@@ -25,16 +25,15 @@ jobs:
       run: dotnet build
 
     - name: Test
-      run: dotnet test
-      
+      run: dotnet test --logger "trx;LogFileName=test_results.trx"
     - name: Upload Screenshots
       uses: actions/upload-artifact@v4
       with:
        name: screenshots
        path: "**/bin/**/Screenshots"
-    - name: Upload TestReports
+
+    - name: Upload Test Reports
       uses: actions/upload-artifact@v4
       with:
-       name: Test-Reports
-       path: "**/bin/**/TestResults"
-
+        name: test-reports
+        path: "**/bin/**/TestResults"
