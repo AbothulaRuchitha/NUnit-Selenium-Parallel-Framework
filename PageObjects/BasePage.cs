@@ -13,7 +13,7 @@ namespace CornerStoneNUnit.PageObjects
         public BasePage(IWebDriver driver)
         {
             this.driver = driver;
-            wait=new WebDriverWait(driver,TimeSpan.FromSeconds(10));
+            wait=new WebDriverWait(driver,TimeSpan.FromSeconds(15));
         }
         protected IWebElement Find(By Locator)
         {
