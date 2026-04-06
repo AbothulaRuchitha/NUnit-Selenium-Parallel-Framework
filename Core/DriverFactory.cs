@@ -11,6 +11,8 @@ namespace CornerStoneNUnit.Core
         public static IWebDriver InitDriver()
         {
             ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--headless=new");
+            options.AddArgument("--disable-gpu");
             options.AddArgument("--force-device-scale-factor=1");
             options.AddArgument("--high-dpi-support=1");
             options.AddArgument("--window-size=1920,1080");
