@@ -1,3 +1,4 @@
+
 name: Run NUnit Tests
 
 on:
@@ -31,7 +32,8 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
        name: screenshots
-       path: "./Screenshots/**"
+       path: |
+        **/Screenshots/**/*.png
 
     - name: Upload Test Reports
       uses: actions/upload-artifact@v4
