@@ -9,7 +9,7 @@ namespace CornerStoneNUnit.Utilities
         public static void CaptureScreeshot(IWebDriver driver)
         {
             var Res = TestContext.CurrentContext.Result;
-            if (Res.Outcome.Status == TestStatus.Passed)
+            if (Res.Outcome.Status == TestStatus.Failed)
             {
                 try
                 {
